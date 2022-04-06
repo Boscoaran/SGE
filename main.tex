@@ -1,0 +1,51 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wallpaper}
+
+\usepackage[colorlinks = true,
+            linkcolor = black,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{mathptmx}
+\graphicspath{ {imagenes/} }
+
+\setlength{\parindent}{10px}
+\setlength{\parskip}{10px}
+\renewcommand{\baselinestretch}{1.25}
+
+\font\myfont= cmr10 at 35pt
+\title{{\myfont Diseño e implementación de un Sistema de Gestión de Empresa\\
+\large Software de Gestión de Empresa}}
+\author{Bosco Aranguren \\ Vicente Ayarza \\ Joel Bra \\ Diego Marta }
+\date{Abril 2022}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\vfill
+}}}
+\begin{document}
+
+\maketitle
+\ThisCenterWallPaper{1}{imagenes/portada.jpg}
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=170px]{logo.png}
+\end{figure}
+
+\thispagestyle{empty}
+\clearpage
+\input{Textos/intro}
+\clearpage
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\input{fuentes}
+\end{document}
