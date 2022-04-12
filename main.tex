@@ -5,45 +5,53 @@
 \usepackage{graphicx}
 \usepackage{wallpaper}
 
+
 \usepackage[colorlinks = true,
             linkcolor = black,
             urlcolor  = blue,
             citecolor = blue,
             anchorcolor = blue]{hyperref}
-\usepackage{mathptmx}
-\graphicspath{ {imagenes/} }
+\graphicspath{ {Imagenes/} }
 
 \setlength{\parindent}{10px}
 \setlength{\parskip}{10px}
 \renewcommand{\baselinestretch}{1.25}
 
-\font\myfont= cmr10 at 35pt
-\title{{\myfont Diseño  implementación de un Sistema de Gestión de Empresa\\
-\large Software de Gestión de Empresa}}
-\author{Bosco Aranguren \\ Vicente Ayarza \\ Joel Bra \\ Diego Marta }
-\date{Abril 2022}
+\title{\textsf{\textbf{\Huge Diseño e implementación de un Sistema de Gestión de Empresa}\\ \large \textbf{Software de Gestión de Empresa}}}
+\author{\vspace{70px} \\\textsf{Bosco Aranguren} \\ \textsf{Vicente Ayarza} \\ \textsf{Joel Bra} \\ \textsf{Diego Marta}}
+\date{\textsf{\vspace{40px} \\ Abril 2022}}
 \newcommand\BackgroundPic{%
-\put(0,0){%
-\parbox[b][\paperheight]{\paperwidth}{%
-\vfill
-\centering
-\vfill
+    \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{
+    \vfill
+    \centering
+    \vfill
 }}}
 \begin{document}
 
 \maketitle
-\ThisCenterWallPaper{1}{imagenes/portada.jpg}
+\ThisCenterWallPaper{1}{Imagenes/portada.jpg}
 
 \begin{figure}[b]
 \centering
 \includegraphics[width=170px]{logo.png}
 \end{figure}
 
+\sffamily
 \thispagestyle{empty}
 \clearpage
-\input{Textos/intro}
-\clearpage
 \tableofcontents
+\clearpage
+\section{\textsf{Análisis del sector}}
+\input{Textos/Análisis del sector.tex}
+\subsection{\textsf{Análisis del entorno competitivo (Porter)}}
+\input{Textos/Análisis del entorno competitivo.tex}
+\clearpage
+\section{\textsf{Descripción de la empresa}}
+\subsection{\textsf{Forma jurídica}}
+\input{Textos/Forma jurídica.tex}
+\subsection{\textsf{Estructura organizacional}}
+\input{Textos/Estructura organizacional.tex}
 \clearpage
 \listoffigures
 \clearpage
