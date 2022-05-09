@@ -4,6 +4,7 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{wallpaper}
+\usepackage{amssymb}
 
 
 \usepackage[colorlinks = true,
@@ -17,51 +18,58 @@
 \setlength{\parskip}{10px}
 \renewcommand{\baselinestretch}{1.25}
 
-\title{\textsf{\textbf{\Huge Diseño e implementación de un Sistema de Gestión de Empresa}\\ \large \textbf{Software de Gestión de Empresa}}}
-\author{\vspace{70px} \\\textsf{Bosco Aranguren} \\ \textsf{Vicente Ayarza} \\ \textsf{Joel Bra} \\ \textsf{Diego Marta} \\ \textsf{Natalia }}
-\date{\textsf{\vspace{30px} }}
+
 \newcommand\BackgroundPic{%
-    \put(0,0){%
-    \parbox[b][\paperheight]{\paperwidth}{
+\put(0,0){%
+\parbox[b][]{\paperwidth}{
     \vfill
     \centering
     \vfill
-}}}
+    }}}
 \begin{document}
-
-\maketitle
-\ThisCenterWallPaper{1}{Imagenes/portada.jpg}
-
-\begin{figure}[b]
-\centering
-\includegraphics[width=170px]{logo.png}
-\end{figure}
-
-\sffamily
+\begin{titlepage}
+    \ThisCenterWallPaper{1}{Imagenes/portada.jpg}
+    \centering
+    {\scshape\Large Universidad del País Vasco \par}
+    {\scshape\Large Escuela de Ingeniería de Bilbao \par}
+    \vspace{2cm}
+    {\scshape\Huge {Documentación del proyecto} \par}
+    {\itshape\Large Software de Gestión de Empresa\par}
+    \vspace{5cm} 
+    {\Large Bosco Aranguren \& Joel Bra \& Diego Marta\\Vicente Ayarza \& Natalia Martínez\par}
+    \vspace{0.2cm}
+    {\large Curso 2021/2022 \par}
+    \vspace{0.1cm}
+    \includegraphics[scale=0.25]{Imagenes/logo.png}
+\end{titlepage}
+    
+    
 \thispagestyle{empty}
 \clearpage
 \tableofcontents
 \clearpage
-\section{\textsf{Análisis del sector}}
+\section{Análisis del sector}
 \input{Textos/1/1.tex}
-\subsection{\textsf{Análisis del entorno competitivo (Porter)}}
+\subsection{Análisis del entorno competitivo (Porter)}
 \input{Textos/1/1.1.tex}
 \pagebreak
-\section{\textsf{Descripción de la empresa}}
-\subsection{\textsf{Forma jurídica}}
+\section{Descripción de la empresa}
+\subsection{Forma jurídica}
 \input{Textos/2/2.1.tex}
-\subsection{\textsf{Estructura organizacional}}
+\subsection{Estructura organizacional}
 \input{Textos/2/2.2.tex}
-\subsection{\textsf{Descripción de los productos ofertados}}
+\subsection{Descripción de los productos ofertados}
 \input{Textos/2/2.3.tex}
-\subsection{\textsf{Proveedores}}
+\subsection{Proveedores}
 \input{Textos/2/2.4.tex}
 \pagebreak
-\section{\textsf{Diseño del diseño de gestión}}
+\section{Diseño del diseño de gestión}
 \begin{figure}[ht]
     \includegraphics[width=\textwidth]{workflow.png}
     \caption{\textsf{Workflow del proceso de montaje de un ordenador}}
     \label{workflow}
 \end{figure}
 \input{Textos/3/3.tex}
+\pagebreak
+\input{Textos/checklist.tex}
 \end{document}
